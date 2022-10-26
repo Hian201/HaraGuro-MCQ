@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		55020F762907944900485361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55020F752907944900485361 /* AppDelegate.swift */; };
 		55020F782907944900485361 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55020F772907944900485361 /* SceneDelegate.swift */; };
-		55020F7A2907944900485361 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55020F792907944900485361 /* ViewController.swift */; };
 		55020F7D2907944900485361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55020F7B2907944900485361 /* Main.storyboard */; };
 		55020F7F2907944A00485361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55020F7E2907944A00485361 /* Assets.xcassets */; };
 		55020F822907944A00485361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55020F802907944A00485361 /* LaunchScreen.storyboard */; };
+		55020F8A2907B1B000485361 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55020F892907B1B000485361 /* Question.swift */; };
+		55020F8F2907BB1200485361 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55020F8E2907BB1200485361 /* Game.swift */; };
+		80EDB725290827990050826A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EDB724290827990050826A /* HomeViewController.swift */; };
+		80EDB727290828FA0050826A /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EDB726290828FA0050826A /* QuestionViewController.swift */; };
+		80EDB729290829FD0050826A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EDB728290829FD0050826A /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55020F722907944900485361 /* HaraKuro Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HaraKuro Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55020F752907944900485361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55020F772907944900485361 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55020F792907944900485361 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55020F7C2907944900485361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55020F7E2907944A00485361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55020F812907944A00485361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55020F832907944A00485361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55020F892907B1B000485361 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		55020F8E2907BB1200485361 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		80EDB724290827990050826A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		80EDB726290828FA0050826A /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		80EDB728290829FD0050826A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				55020F752907944900485361 /* AppDelegate.swift */,
 				55020F772907944900485361 /* SceneDelegate.swift */,
-				55020F792907944900485361 /* ViewController.swift */,
+				55020F8D2907BAC200485361 /* Model */,
+				80EDB723290827280050826A /* Controller */,
 				55020F7B2907944900485361 /* Main.storyboard */,
 				55020F7E2907944A00485361 /* Assets.xcassets */,
 				55020F802907944A00485361 /* LaunchScreen.storyboard */,
 				55020F832907944A00485361 /* Info.plist */,
 			);
 			path = "HaraKuro Test";
+			sourceTree = "<group>";
+		};
+		55020F8D2907BAC200485361 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55020F892907B1B000485361 /* Question.swift */,
+				55020F8E2907BB1200485361 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80EDB723290827280050826A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80EDB724290827990050826A /* HomeViewController.swift */,
+				80EDB726290828FA0050826A /* QuestionViewController.swift */,
+				80EDB728290829FD0050826A /* ResultViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 55020F6D2907944800485361 /* Build configuration list for PBXProject "HaraKuro Test" */;
+			buildConfigurationList = 55020F6D2907944800485361 /* Build configuration list for PBXProject "HaraGuro" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55020F7A2907944900485361 /* ViewController.swift in Sources */,
+				80EDB725290827990050826A /* HomeViewController.swift in Sources */,
+				55020F8F2907BB1200485361 /* Game.swift in Sources */,
+				80EDB729290829FD0050826A /* ResultViewController.swift in Sources */,
+				80EDB727290828FA0050826A /* QuestionViewController.swift in Sources */,
+				55020F8A2907B1B000485361 /* Question.swift in Sources */,
 				55020F762907944900485361 /* AppDelegate.swift in Sources */,
 				55020F782907944900485361 /* SceneDelegate.swift in Sources */,
 			);
@@ -339,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		55020F6D2907944800485361 /* Build configuration list for PBXProject "HaraKuro Test" */ = {
+		55020F6D2907944800485361 /* Build configuration list for PBXProject "HaraGuro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55020F842907944A00485361 /* Debug */,
